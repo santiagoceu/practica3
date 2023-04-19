@@ -94,6 +94,13 @@ public class Graph<V> {
         }
         else return null;
     }
+    /**
+    Recorre la traza y la va añadiendo a un array para devolver.
+    @param v el vector destino al que queremos llegar en onePath
+     @param m la traza obtenida en onePath
+     @return List para devolver a onePath
+
+     */
     private List<V> backpedal(V v, Map<V,V> m) {
         if (m.get(v)==null) return new ArrayList<V>(Arrays.asList(v));
         else {
