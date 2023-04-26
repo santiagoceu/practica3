@@ -36,7 +36,7 @@ public class Graph<V> {
      * @return conjunto de vértices adyacentes.
      ******************************************************************/
     public Set<V> obtainAdjacents(V v) {
-        return adjacencyList.get(v);
+        return adjacencyList.get(v );
 
     }
     /******************************************************************
